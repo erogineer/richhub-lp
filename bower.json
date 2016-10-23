@@ -1,0 +1,39 @@
+{
+  "name": "package",
+  "description": "bower-template",
+  "main": "index.js",
+  "authors": [
+    "ozeki"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "bootstrap",
+    "jQuery",
+    "riot"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "riot": "^2.6.4"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.min.js",
+        "dist/css/bootstrap.min.css"
+      ]
+    },
+    "riot": {
+      "main": [
+        "riot+compiler.min.js"
+      ]
+    }
+  }
+}
