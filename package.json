@@ -4,7 +4,7 @@
   "description": "gulp-template",
   "main": "index.js",
   "scripts": {
-    "initialize": "npm install&bundle intall&bower install",
+    "initialize": "npm install&bower install",
     "build": "gulp build",
     "s": "gulp server",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -62,6 +62,7 @@
     "gulp-uglify": "^1.5.2",
     "imagemin-jpegtran": "^4.3.2",
     "main-bower-files": "^2.11.1",
+    "riot": "^2.6.4",
     "run-sequence": "^1.1.5"
   }
 }

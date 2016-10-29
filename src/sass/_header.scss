@@ -1,0 +1,32 @@
+header {
+  #jumbotron {
+    position: relative; /* 絶対配置の基準点 */
+    width: 100%; /* 600px以下は幅いっぱいに広げる */
+    height: 100%; /* 高さの指定 */
+    margin: 0 auto; /* ブロック要素の中央揃え */
+    text-align: center; /* インライン要素の中央揃え */
+    background: #fff; /* 背景色 */
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .button-group {
+      position: absolute; /* 絶対配置 */
+      top: 50%; /* 上から半分 */
+      left: 50%; /* 左から半分 */
+      width: 100%; /* 大枠と同じ幅に */
+      margin: -1.5em 0 0 -50%; /* 要素の大きさの半分引く */
+      .list {
+        width: 200px;
+        height: 60px;
+      }
+      .form {
+        width: 200px;
+        height: 60px;
+      }
+      button {
+        opacity: 0.8;
+      }
+    }
+  }
+}

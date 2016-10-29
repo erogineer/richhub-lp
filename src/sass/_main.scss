@@ -1,0 +1,19 @@
+main {
+  .title {
+    text-align: center;
+    text-decoration: underline;
+    margin: 20px 0;
+  }
+
+  .work-list {
+    margin: 0 auto;
+    text-align: center;
+    display: table;
+    .work-list-detail {
+      display: inline-block;
+      width: 50%;
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+  }
+}

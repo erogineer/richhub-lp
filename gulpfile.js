@@ -33,7 +33,7 @@ gulp.task( 'server', function() {//'browser-sync'が実行時のタスク名な�
   runSequence(['build']);
   gulp.watch(paths.compileDir + "/sass/**/*.scss", ['sass']);
   gulp.watch(paths.compileDir + "/templates/*.html", ['html']);
-  gulp.watch(paths.compileDir + "/templates/riot/*.tag", ['riot']);
+  gulp.watch(paths.compileDir + "/templates/riot/**/*.tag", ['riot']);
   gulp.watch(paths.compileDir + "/js/*.js", ['jsmin']);
   gulp.watch(paths.compileDir + "/images/**", ['imagemin']);
 });
@@ -53,9 +53,10 @@ gulp.task('html', function() {
 });
 
 gulp.task('riot', function() {
-  gulp.src(paths.compileDir+ '/templates/riot/*.tag')
+  gulp.src(paths.compileDir+ '/templates/riot/**/*.tag')
     .pipe(plumber(notify.onError('Error: <%= error.message %>')))
     //.pipe(riot({compact: true}))
+    .pipe(concat('view.js'))
     .pipe(gulp.dest(paths.rootDir+ '/libs/riot'))
 });
 
